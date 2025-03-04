@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lets Play_Phonk</title>
+    <link rel="shortcut icon" href="th.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body oncontextmenu="return false;">
+    <h1>Lets Play_Phonk</h1>
+    <div class="container">
+      <div class="player">
+        <img id="current-img" src="sc.png" alt="Current Song" />
+        <h2 id="current-title">UpDeta</h2>
+        <p id="current-artist">SigmaMusicArt</p>
+        <audio id="audio" src="phonk1.mp3"></audio>
+        <div class="controls">
+          <button onclick="prevSong()">
+            <i class="bx bx-skip-previous"></i>
+          </button>
+          <button onclick="togglePlay()">
+            <i class="bx bx-play" id="play-btn"></i>
+          </button>
+          <button onclick="nextSong()"><i class="bx bx-skip-next"></i></button>
+        </div>
+      </div>
+      <div class="song-list">
+        <div class="song" onclick="playSong(0)">
+          <img src="sc.png" alt="Song 1" />
+          <div class="song-info">
+            <h2>UpDeta</h2>
+            <p>SigmaMusicArt</p>
+          </div>
+        </div>
+        <div class="song" onclick="playSong(1)">
+          <img src="th.png" alt="Song 2" />
+          <div class="song-info">
+            <h2>Aggressive Phonk</h2>
+            <p>Brazilian Phonk</p>
+          </div>
+        </div>
+        <div class="song" onclick="playSong(2)">
+          <img src="ucha.png" alt="Song 3" />
+          <div class="song-info">
+            <h2>UCHA - Brazilian Phonk</h2>
+            <p>ScrewedQueen</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
